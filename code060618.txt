@@ -1,3 +1,4 @@
-scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/92GenomePeps/ aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/
+scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/92GenomePeps/ aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/
 
 
+scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/ExampleData/ aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/
