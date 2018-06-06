@@ -1,3 +1,6 @@
+ssh aew75@farm.cse.ucdavis.edu 
+
+
 scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/92GenomePeps/ aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/
 
 
