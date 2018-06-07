@@ -26,7 +26,7 @@ dos2unix /home/aew75/scripts/ugt060718.sh
 sbatch -p med -N 1 --ntasks-per-node=24 /home/aew75/scripts/ugt060718.sh
 
 # Check job(s)
-sbatch -u aew75
+squeue -u aew75
 
 # transfer to LOCAL
 scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/home/aew75/projects/UGTortho/92GenomePeps/Results_Jun07_1/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
