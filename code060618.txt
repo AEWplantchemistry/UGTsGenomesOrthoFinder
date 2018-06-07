@@ -7,3 +7,8 @@ scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/92GenomePeps/ aew75@farm.cse.ucdavis
 scp -P 2022 -r /home/alex/OrthoFinder-2.2.6/ExampleData/ aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/
 
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/ugtExample.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/ExampleData/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/" 
+
+scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/" 
+
