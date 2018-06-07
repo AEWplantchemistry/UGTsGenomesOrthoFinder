@@ -33,3 +33,6 @@ scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/home/aew75/projects/UGTortho/92Genom
 
 # transfer to LOCAL
 scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/" 
+
+# check drive usage
+df -h
