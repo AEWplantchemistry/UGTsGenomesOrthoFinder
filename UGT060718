@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#SBATCH -D /home/aew75/projects/UGTortho/
+#SBATCH -o /home/aew75/projects/UGTortho/slurm-log/ugt060718-stdout-%j.txt
+#SBATCH -e /home/aew75/projects/UGTortho/slurm-log/ugt060718-stderr-%j.txt
+#SBATCH -J ugt060718
+#SBATCH -t 48:00:00
+set -e
+set -u
+
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=aewilson@ucdavis.edu
+
+module load bio
+
+orthofinder -f /home/aew75/projects/UGTortho/92GenomePeps/ -t 24 -S diamond
