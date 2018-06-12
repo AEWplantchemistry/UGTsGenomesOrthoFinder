@@ -40,5 +40,23 @@ df -h
 # Remove dir recursive
 rm -r mydir
 
-# 
 
+# transfer to FARM
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/ugt060918.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+# I work on windows
+dos2unix /home/aew75/scripts/ugt060918.sh
+
+# Submit batch
+sbatch -p med -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt060918.sh
+
+
+# High
+# transfer to FARM
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/ugt061218.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+# I work on windows
+dos2unix /home/aew75/scripts/ugt061218.sh
+
+# Submit batch
+sbatch -p high -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061218.sh
