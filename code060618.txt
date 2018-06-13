@@ -60,3 +60,23 @@ dos2unix /home/aew75/scripts/ugt061218.sh
 
 # Submit batch
 sbatch -p high -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061218.sh
+
+
+# ###############################
+
+# transfer to FARM
+scp -P 2022 -r "/mnt/c/Sub6/" aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/ugtSub6.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+# I work on windows
+dos2unix /home/aew75/scripts/ugtSub1.sh
+dos2unix /home/aew75/scripts/ugtSub2.sh
+dos2unix /home/aew75/scripts/ugtSub3.sh
+dos2unix /home/aew75/scripts/ugtSub4.sh
+dos2unix /home/aew75/scripts/ugtSub5.sh
+dos2unix /home/aew75/scripts/ugtSub6.sh
+
+# Submit batch
+sbatch -p med -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub6.sh
+
+
