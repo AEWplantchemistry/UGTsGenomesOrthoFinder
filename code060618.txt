@@ -79,4 +79,9 @@ dos2unix /home/aew75/scripts/ugtSub6.sh
 # Submit batch
 sbatch -p med -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub6.sh
 
+# #############################
+
+sbatch --test-only -p high -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061218.sh
+sbatch --test-only -p med -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt060918.sh
+sbatch --test-only -p med -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub1.sh
 
