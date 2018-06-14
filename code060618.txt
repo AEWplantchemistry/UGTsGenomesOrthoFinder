@@ -85,7 +85,7 @@ sbatch --test-only -p high -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user
 sbatch --test-only -p med -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt060918.sh
 sbatch --test-only -p med -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub1.sh
 
-sbatch --test-only -p low -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061218.sh
+sbatch --test-only -p low -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061418.sh
 
 # transfer to FARM
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/ugt061418.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
@@ -95,3 +95,13 @@ dos2unix /home/aew75/scripts/ugt061418.sh
 
 # Submit batch
 sbatch -p low -N 6 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugt061418.sh
+
+# ################
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub1.sh
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub2.sh
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub3.sh
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub4.sh
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub5.sh
+sbatch -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub6.sh
+
+sbatch --test-only -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/ugtSub1.sh
