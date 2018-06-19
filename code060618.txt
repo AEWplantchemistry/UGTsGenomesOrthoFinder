@@ -110,3 +110,10 @@ sbatch --test-only -p low -N 1 --ntasks-per-node=24 --mail-type=ALL --mail-user=
 
 scp -P 2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
 
+# ### Get the data, subs
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/Sub1/Results_Jun18/ "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/Sub1/Results_Jun18/Orthogroups.csv "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/Sub1/Results_Jun18/Orthogroups.GeneCount.csv "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
