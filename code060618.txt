@@ -212,5 +212,12 @@ scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt063018-s
 
 scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/Species49.fa "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
 
+scp -P 2022 "/mnt/c/stage/Species49.fa" aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/
 
+scp -P 2022 "/mnt/c/stage/diamondDBSpecies49.dmnd" aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/
 
+# ####################
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/Dia490-stdout-22432519.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/Dia490-stderr-22432519.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
