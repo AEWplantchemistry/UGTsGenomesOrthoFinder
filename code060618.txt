@@ -137,43 +137,46 @@ scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_
 
 # #########################
 
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia81.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia82.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia83.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia84.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia85.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia86.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia87.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia88.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia56.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia78.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia80.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia89.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia90.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia91.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 
 ssh aew75@farm.cse.ucdavis.edu 
 
-dos2unix /home/aew75/scripts/Dia81.sh
-dos2unix /home/aew75/scripts/Dia82.sh
-dos2unix /home/aew75/scripts/Dia83.sh
-dos2unix /home/aew75/scripts/Dia84.sh
-dos2unix /home/aew75/scripts/Dia85.sh
-dos2unix /home/aew75/scripts/Dia86.sh
-dos2unix /home/aew75/scripts/Dia87.sh
-dos2unix /home/aew75/scripts/Dia88.sh
+dos2unix /home/aew75/scripts/Dia56.sh
+dos2unix /home/aew75/scripts/Dia78.sh
+dos2unix /home/aew75/scripts/Dia80.sh
 dos2unix /home/aew75/scripts/Dia89.sh
-dos2unix /home/aew75/scripts/Dia90.sh
-dos2unix /home/aew75/scripts/Dia91.sh
 
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia81.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia82.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia83.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia84.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia85.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia86.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia87.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia88.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia56.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia78.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia80.sh
 sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia89.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia90.sh
-sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia91.sh
+
+squeue -u aew75 
+
+# #######################
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia56.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia80.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia86.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia89.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+ssh aew75@farm.cse.ucdavis.edu 
+
+dos2unix /home/aew75/scripts/Dia56.sh
+dos2unix /home/aew75/scripts/Dia80.sh
+dos2unix /home/aew75/scripts/Dia86.sh
+dos2unix /home/aew75/scripts/Dia89.sh
+
+
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia56.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia80.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia86.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia89.sh
+
+squeue -u aew75 
+
 # #################
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia490.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 
@@ -200,7 +203,7 @@ ssh aew75@farm.cse.ucdavis.edu
 
 dos2unix /home/aew75/scripts/UGT063018.sh
 
-sbatch -p high -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/UGT063018.sh
+sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/UGT063018.sh
 
 
 
