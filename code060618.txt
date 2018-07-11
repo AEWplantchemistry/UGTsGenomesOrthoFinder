@@ -142,7 +142,7 @@ scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Di
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia80.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/Dia89.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 
-ssh aew75@farm.cse.ucdavis.edu 
+ssh aew75@farm.cse.ucdavis.edu
 
 dos2unix /home/aew75/scripts/Dia56.sh
 dos2unix /home/aew75/scripts/Dia78.sh
@@ -197,11 +197,11 @@ dos2unix /home/aew75/scripts/Dia491.sh
 sbatch -p high -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/Dia491.sh
 
 # ###################
-scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/UGT063018.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/UGT071118.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
 
 ssh aew75@farm.cse.ucdavis.edu 
 
-dos2unix /home/aew75/scripts/UGT063018.sh
+dos2unix /home/aew75/scripts/UGT071118.sh
 
 sbatch -p med -N 1 --mail-type=ALL --mail-user=aew75 /home/aew75/scripts/UGT063018.sh
 
@@ -224,3 +224,8 @@ scp -P 2022 "/mnt/c/stage/diamondDBSpecies49.dmnd" aew75@farm.cse.ucdavis.edu:~/
 scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/Dia490-stdout-22432519.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
 
 scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/Dia490-stderr-22432519.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+rsync -avz --port=2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/ /home/alex/OrthoFinder-2.2.6/FARM/
+
+rsync -avz -r --port=2022 -e 'ssh aew75@farm.cse.ucdavis.edu -p 2022'aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/ /home/alex/OrthoFinder-2.2.6/FARM/
+
