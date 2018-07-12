@@ -229,3 +229,18 @@ rsync -avz --port=2022 -r aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92Genom
 
 rsync -avz -r --port=2022 -e 'ssh aew75@farm.cse.ucdavis.edu -p 2022'aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/ /home/alex/OrthoFinder-2.2.6/FARM/
 
+# ###################################################
+
+scp -P 2022 "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/UGT071218.sh" aew75@farm.cse.ucdavis.edu:~/scripts/
+
+ssh aew75@farm.cse.ucdavis.edu 
+
+dos2unix /home/aew75/scripts/UGT071218.sh
+
+sbatch -p med -N 1 --nodelist=c8-66 --mem=32G /home/aew75/scripts/UGT071218.sh
+
+squeue -u aew75
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stdout-23516398.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stderr-23516398.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
