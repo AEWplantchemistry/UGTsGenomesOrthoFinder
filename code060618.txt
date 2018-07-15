@@ -237,10 +237,14 @@ ssh aew75@farm.cse.ucdavis.edu
 
 dos2unix /home/aew75/scripts/UGT071218.sh
 
-sbatch -p med -N 1 --nodelist=c8-66 --mem=32G /home/aew75/scripts/UGT071218.sh
+# ##################
+
+sbatch -p high -N 1 --nodelist=c8-66 --mem=16G /home/aew75/scripts/UGT071218.sh
+
+sbatch -p high -N 1 --nodelist=c9-69 --mem=32G /home/aew75/scripts/UGT071218.sh
 
 squeue -u aew75
 
-scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stdout-23519828.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stdout-23546594.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
 
-scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stderr-23519828.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stderr-23546594.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
