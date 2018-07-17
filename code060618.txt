@@ -248,3 +248,7 @@ squeue -u aew75
 scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stdout-23565282.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
 
 scp -P 2022 aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/slurm-log/ugt071218-stderr-23565282.txt "/mnt/c/Users/Alex Wilson/Documents/Davis 2018/BioinformaticsUGTs/6718/"
+
+rsync -avz -e 'ssh -p 2022' /scratch/aew75/ugt071118/Orthogroups.txt aew75@farm.cse.ucdavis.edu:~/projects/UGTortho/92GenomePeps/Results_Jun14/WorkingDirectory/ 
+
+
