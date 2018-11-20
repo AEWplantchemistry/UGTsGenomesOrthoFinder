@@ -1,1 +1,1 @@
-sed 's/,//g' /mnt/c/Users/'Alex Wilson'/Downloads/sequenceEg5.fasta
+sed 's/,//g' /mnt/c/Users/'Alex Wilson'/Downloads/sequenceEg5.fasta > /mnt/c/Users/'Alex Wilson'/Downloads/Eg5.fa
